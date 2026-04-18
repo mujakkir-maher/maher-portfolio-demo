@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mujakkir Ahmed Maher | Portfolio</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -14,7 +14,7 @@
   --card: #161b22;
   --text: #e6edf3;
   --muted: #8b949e;
-  --accent: #1f6feb;
+  --accent: #2f81f7;
   --shadow: rgba(0,0,0,0.5);
 }
 
@@ -25,45 +25,65 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* Typography */
 h1, h2, h3 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
 }
 
+h1 { font-size: 48px; }
+h2 { font-size: 32px; margin-bottom: 20px; }
+h3 { font-size: 20px; }
+
+p {
+  color: var(--muted);
+  max-width: 600px;
+}
+
+/* Layout */
 section {
-  padding: 80px 10%;
+  padding: 100px 8%;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 
+/* Button */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  margin-top: 20px;
+  padding: 12px 28px;
   background: var(--accent);
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(31,111,235,0.4);
-  transition: 0.3s;
+  box-shadow: 0 6px 25px rgba(47,129,247,0.35);
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   transform: translateY(-3px);
 }
 
+/* Card */
 .card {
   background: var(--card);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px var(--shadow);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px var(--shadow);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* HERO */
@@ -71,27 +91,22 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
 .hero-text {
-  max-width: 600px;
+  flex: 1;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: var(--muted);
-  margin-bottom: 20px;
+.hero-text p {
+  margin: 20px 0;
 }
 
 .hero img {
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 8px 40px var(--shadow);
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px var(--shadow);
 }
 
 /* ABOUT */
@@ -99,17 +114,23 @@ section {
   text-align: center;
 }
 
+.about p {
+  margin: auto;
+}
+
 /* PORTFOLIO */
 .portfolio-grid {
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 25px;
 }
 
 /* TESTIMONIALS */
 .testimonials {
+  margin-top: 40px;
   display: grid;
-  gap: 20px;
+  gap: 25px;
 }
 
 /* CTA */
@@ -117,11 +138,17 @@ section {
   text-align: center;
 }
 
+.cta p {
+  margin: 10px auto 20px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   color: var(--muted);
+  font-size: 14px;
+  border-top: 1px solid #222;
 }
 </style>
 </head>
@@ -131,20 +158,19 @@ footer {
 <!-- HERO -->
 <section class="hero container">
   <div class="hero-text">
-    <h1>Hi, I'm Mujakkir Ahmed Maher</h1>
-    <p>Software Engineer who loves coding and building impactful digital products.</p>
+    <h1>Mujakkir Ahmed Maher</h1>
+    <p>Software Engineer who loves coding and building modern digital experiences with clean, scalable solutions.</p>
     <a href="#" class="btn">Hire Me</a>
   </div>
-  <img src="https://source.unsplash.com/300x300/?developer" alt="profile">
+  <img src="https://source.unsplash.com/300x300/?programmer" alt="profile">
 </section>
 
 <!-- ABOUT -->
 <section class="about container">
   <h2>About Me</h2>
   <p>
-    I'm a passionate software engineer who enjoys building modern, scalable applications.
-    I focus on clean code, performance, and user-friendly design. Always learning,
-    always building.
+    I’m a passionate software engineer focused on building efficient, scalable, and user-friendly applications.
+    I enjoy solving problems, writing clean code, and continuously learning new technologies.
   </p>
 </section>
 
@@ -154,15 +180,15 @@ footer {
   <div class="portfolio-grid">
     <div class="card">
       <h3>Project One</h3>
-      <p>Full-stack web app using React & Node.js.</p>
+      <p>Modern web application using React and Node.js.</p>
     </div>
     <div class="card">
       <h3>Project Two</h3>
-      <p>REST API system built with Express & MongoDB.</p>
+      <p>Backend API system with authentication and database integration.</p>
     </div>
     <div class="card">
       <h3>Project Three</h3>
-      <p>Competitive programming toolkit in C++.</p>
+      <p>Algorithmic toolkit and competitive programming solutions.</p>
     </div>
   </div>
 </section>
@@ -172,11 +198,11 @@ footer {
   <h2>Testimonials</h2>
   <div class="testimonials">
     <div class="card">
-      <p>"Great developer, very professional and skilled."</p>
+      <p>"Very professional and delivers high-quality work consistently."</p>
       <small>- Client A</small>
     </div>
     <div class="card">
-      <p>"Delivered high-quality work on time."</p>
+      <p>"Great communication and strong problem-solving skills."</p>
       <small>- Client B</small>
     </div>
   </div>
@@ -184,8 +210,8 @@ footer {
 
 <!-- CTA -->
 <section class="cta container">
-  <h2>Let's Work Together</h2>
-  <p>Have a project in mind? Let's build something amazing.</p>
+  <h2>Let’s Build Something Great</h2>
+  <p>Have an idea or project? Let’s turn it into reality.</p>
   <a href="#" class="btn">Contact Me</a>
 </section>
 
