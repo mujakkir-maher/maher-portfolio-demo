@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mujakkir Ahmed Maher | Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #1f6feb;
+  --shadow: rgba(0,0,0,0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(31,111,235,0.4);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px var(--shadow);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.hero img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px var(--shadow);
+}
+
+/* ABOUT */
+.about {
+  text-align: center;
+}
+
+/* PORTFOLIO */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  display: grid;
+  gap: 20px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero container">
+  <div class="hero-text">
+    <h1>Hi, I'm Mujakkir Ahmed Maher</h1>
+    <p>Software Engineer who loves coding and building impactful digital products.</p>
+    <a href="#" class="btn">Hire Me</a>
+  </div>
+  <img src="https://source.unsplash.com/300x300/?developer" alt="profile">
+</section>
+
+<!-- ABOUT -->
+<section class="about container">
+  <h2>About Me</h2>
+  <p>
+    I'm a passionate software engineer who enjoys building modern, scalable applications.
+    I focus on clean code, performance, and user-friendly design. Always learning,
+    always building.
+  </p>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="container">
+  <h2>Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>Full-stack web app using React & Node.js.</p>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>REST API system built with Express & MongoDB.</p>
+    </div>
+    <div class="card">
+      <h3>Project Three</h3>
+      <p>Competitive programming toolkit in C++.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="container">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="card">
+      <p>"Great developer, very professional and skilled."</p>
+      <small>- Client A</small>
+    </div>
+    <div class="card">
+      <p>"Delivered high-quality work on time."</p>
+      <small>- Client B</small>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta container">
+  <h2>Let's Work Together</h2>
+  <p>Have a project in mind? Let's build something amazing.</p>
+  <a href="#" class="btn">Contact Me</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Mujakkir Ahmed Maher. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
